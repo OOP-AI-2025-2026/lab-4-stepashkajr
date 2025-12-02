@@ -13,7 +13,7 @@ public class Task1Test {
         @org.junit.jupiter.api.Test
         @DisplayName("Test clerk for constructor 1")
         void test1() {
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), true);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), true);
             String expected = "clerk-1";
             assertEquals(expected, bill.getClerk().getName());
         }
@@ -21,7 +21,7 @@ public class Task1Test {
         @org.junit.jupiter.api.Test
         @DisplayName("Test clerk for constructor 2")
         void test2() {
-            DiscountBill bill = new DiscountBill(new Employee("clerk-2"), false);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-2"), false);
             String expected = "clerk-2";
             assertEquals(expected, bill.getClerk().getName());
         }
@@ -30,7 +30,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 1")
         void test3() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("candy bar", 1.35, 0.25));
 
             double expected = 1.35;
@@ -41,7 +41,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 2")
         void test4() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("candy bar", 1.35, 0.25));
 
             double expected = 1.10;
@@ -52,7 +52,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 3")
         void test5() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("newspaper", 0.99, 0.0));
 
             double expected = 0.99;
@@ -63,7 +63,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 4")
         void test6() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("newspaper", 0.99, 0.0));
 
             double expected = 0.99;
@@ -74,7 +74,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 4")
         void test7() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("candy bar", 1.35, 0.25));
             bill.add(new Item("toy car", 3.25, 0.50));
             bill.add(new Item("apple", 0.30, 0.05));
@@ -89,7 +89,7 @@ public class Task1Test {
         @DisplayName("Test getTotal() 5")
         void test8() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("candy bar", 1.35, 0.25));
             bill.add(new Item("toy car", 3.25, 0.50));
             bill.add(new Item("apple", 0.30, 0.05));
@@ -104,7 +104,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 1")
         void test9() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("antique table", 125.00, 35.50));
 
             int expected = 0;
@@ -115,7 +115,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 2")
         void test10() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("antique table", 125.00, 35.50));
 
             int expected = 1;
@@ -126,7 +126,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 3")
         void test11() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("gift card", 75.00, 0.0));
 
             int expected = 0;
@@ -137,7 +137,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 4")
         void test12() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("gift card", 75.00, 0.0)); // <-- no discount!
 
             int expected = 0;
@@ -148,7 +148,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 5")
         void test13() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("notebook", 3.00, 0.15));
             bill.add(new Item("lemonade", 1.50, 0.0));
             bill.add(new Item("bread", 2.25, 0.35));
@@ -164,7 +164,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountCount() 6")
         void test14() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("notebook", 3.00, 0.15));
             bill.add(new Item("lemonade", 1.50, 0.0)); // <-- no discount!
             bill.add(new Item("bread", 2.25, 0.35));
@@ -180,7 +180,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 1")
         void test15() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("popcorn", 1.02, 0.12));
 
             double expected = 0.0;
@@ -191,7 +191,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 2")
         void test16() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("popcorn", 1.02, 0.12));
 
             double expected = 0.12;
@@ -202,7 +202,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 3")
         void test17() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("juice", 1.50, 0.0));
 
             double expected = 0.0;
@@ -213,7 +213,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 4")
         void test18() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("juice", 1.50, 0.0));
 
             double expected = 0.0;
@@ -224,7 +224,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 5")
         void test19() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("popcorn", 1.02, 0.12));
             bill.add(new Item("marmalade", 3.25, 0.15));
             bill.add(new Item("wristwatch", 67.90, 18.20));
@@ -238,7 +238,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountAmount() 6")
         void test20() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("popcorn", 1.02, 0.12));
             bill.add(new Item("marmalade", 3.25, 0.15));
             bill.add(new Item("wristwatch", 67.90, 18.20));
@@ -252,7 +252,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 1")
         void test21() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("rice", 3.00, 0.75));
 
             double expected = 0.0;
@@ -263,7 +263,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 2")
         void test22() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("rice", 3.00, 0.75));
 
             double expected = 25.0;
@@ -274,7 +274,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 3")
         void test23() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("vinegar", 4.18, 0.0));
 
             double expected = 0.0;
@@ -285,7 +285,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 4")
         void test24() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("vinegar", 4.18, 0.0));
 
             double expected = 0.0;
@@ -296,7 +296,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 5")
         void test25() {
             boolean preferred = false;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("vinegar", 4.18, 0.0));
             bill.add(new Item("soup", 2.50, 0.15));
             bill.add(new Item("rice", 3.0, 0.75));
@@ -311,7 +311,7 @@ public class Task1Test {
         @DisplayName("Test getDiscountPercent() 6")
         void test26() {
             boolean preferred = true;
-            DiscountBill bill = new DiscountBill(new Employee("clerk-1"), preferred);
+            ua.opnu.java.inheritance.bill.DiscountBill bill = new ua.opnu.java.inheritance.bill.DiscountBill(new Employee("clerk-1"), preferred);
             bill.add(new Item("vinegar", 4.18, 0.0));
             bill.add(new Item("soup", 2.50, 0.15));
             bill.add(new Item("rice", 3.0, 0.75));
